@@ -1,0 +1,40 @@
+{
+  "name": "Chris Elias",
+  "position": "Front End Developer",
+  "portrait_src": "../images/portrait.jpg",
+  "bio_description": "Currently I am a software developer working for FastPBX. I am passionate about learning and always finding new ways of improving myself.",
+  "resume_link": "#!",
+  "github_link": "https://github.com/chris24elias",
+  "linkedin_link": "https://www.linkedin.com/in/christopher-elias",
+  "skills": [
+    {
+      "title": "Web",
+      "skills": ["HTML5", "CSS3 | SASS", "Javascript", "React | Redux"],
+      "icon": "fas fa-window-maximize fa-4x"
+    },
+    {
+      "title": "Mobile",
+      "skills": ["React Native", "Typescript", "iOS | Android", "Java | Swift"],
+      "icon": "fas fa-mobile-alt fa-4x"
+    },
+    {
+      "title": "Server",
+      "skills": ["Node JS", "Express", "MySQL", "PHP"],
+      "icon": "fas fa-server fa-4x"
+    }
+  ],
+  "projects": [
+    {
+      "title": "FastPBX Link",
+      "technologies": ["React Native", "Typescript", "Redux | GraphQL"],
+      "repoLink": "https://github.com/chris24elias/fastpbx-link-demo",
+      "image": "fastpbx-link"
+    },
+    {
+      "title": "VoIPScore",
+      "technologies": ["React Native", "Typescript", "Redux | GraphQL"],
+      "repoLink": "https://github.com/chris24elias/voipscore_demo",
+      "image": "voipscore"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+.section-projects {
+  padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+}
+
+.projects-header {
+  text-align: center !important;
+
+  &-text {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    display: block;
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 4rem !important;
+
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 3px solid $default-font-color;
+      transform: scaleX(0.8);
+    }
+  }
+}
+
+.projects-container {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem;
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 36rem;
+
+  &__side {
+    height: 36rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    border-radius: 3px;
+    overflow: hidden;
+
+    &--front {
+      background-color: $color-white;
+    }
+    &--back {
+      transform: rotateY(180deg);
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85)
+      );
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  //  BACK SIDE
+
+  &__picture {
+    background-size: cover;
+    height: 15rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary
+      ),
+      url("../images/cyberpunkcity2.jpg");
+
+    &__fastpbx-link {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary
+        ),
+        url("../images/pbxlink.jpeg");
+    }
+
+    &__voipscore {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary
+        ),
+        url("../images/voipscore.jpg");
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: $light-weight;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    width: 70%;
+  }
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.85),
+      rgba($color-primary, 0.85)
+    );
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 0.1rem solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  // FRONT SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  &__button-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: $color-white;
+  }
+
+  @include respond(tab-port) {
+    // FUNCTIONALITY
+    position: relative;
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.section-skills {
+  padding: 20rem 0;
+  margin-top: 10rem !important;
+  background-size: cover;
+  transform: translateZ(0) skewY(-5deg);
+  margin-top: -10rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.85),
+      rgba($color-primary-light, 0.85)
+    ),
+    url(../images/cyberpunkstreet.jpg);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
+  @media (min-width: 1600px) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.85),
+        rgba($color-primary-light, 0.85)
+      ),
+      url(../images/cyberpunkstreet.jpg);
+  }
+}
+
+.section-skills > * {
+  transform: translateZ(0) skewY(5deg);
+}
+
+.skills-header {
+  text-align: center !important;
+
+  &-text {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    display: block;
+    max-width: 20rem;
+    color: $color-white;
+    margin: 0 auto;
+    margin-bottom: 4rem !important;
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 3px solid $color-white;
+      transform: scaleX(0.8);
+    }
+  }
+}
+
+.skills-container {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem;
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 30.5rem;
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  @include respond(phone) {
+    height: auto;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &-icon {
+    margin-bottom: 1rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem !important;
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+
+  &-text {
+    // flex-grow: 1;
+  }
+}

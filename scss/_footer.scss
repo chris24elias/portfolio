@@ -1,0 +1,43 @@
+.footer {
+  background-color: $color-secondary-dark;
+  height: 7rem;
+  position: relative;
+  display: flex;
+
+  .menu-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-list {
+    list-style: none;
+    display: block;
+    &-item {
+      display: inline-block;
+      margin-right: 1.5rem;
+      font-size: $default-font-size;
+      font-weight: $light-weight;
+      color: white;
+      transition: transform 0.3s;
+      &:hover {
+        transform: translateY(-0.8rem) scale(1.15);
+      }
+    }
+  }
+
+  &-text {
+    // @include absCenter;
+    font-size: $default-font-size;
+    font-weight: $light-weight;
+    color: white;
+  }
+}

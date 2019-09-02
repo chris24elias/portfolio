@@ -1,0 +1,71 @@
+// Header
+
+.header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 95vh;
+  width: auto;
+  clip-path: polygon(0 0, 100% 0vh, 100% 80vh, 0 100%);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.75),
+      rgba($color-primary-light, 0.75)
+    ),
+    url(../images/cyberpunk_city.jpg);
+
+  &__text-box {
+    @include absCenter;
+    top: 47.5%;
+    text-align: center;
+    width: 100%;
+
+    // > h1 {
+    //   margin-bottom: 1.5rem;
+    // }
+    // > time {
+    //   margin-bottom: 0;
+    // }
+  }
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+    height: 55vh;
+
+    &__text-box {
+      width: 100%;
+      padding: 1rem;
+
+      > h1 {
+        margin-bottom: 1.5rem;
+      }
+      > time {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.heading-primary {
+  color: #fff;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2.5rem;
+
+  &-main {
+    display: block;
+    line-height: 1.3;
+    font-size: 6.5rem;
+    font-weight: 400;
+    letter-spacing: 0.6rem;
+  }
+
+  &-sub {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
+}

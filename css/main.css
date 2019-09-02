@@ -208,6 +208,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 37.5em) {
+    .bio_img {
+      margin-bottom: 2.5rem; } }
   .bio_img_img {
     border-radius: 50%;
     margin: auto; }
@@ -225,7 +228,7 @@ a {
     font-weight: 400; }
     @media (max-width: 37.5em) {
       .bio_text_main {
-        font-size: 2rem; } }
+        font-size: 2.5rem; } }
   .bio_text_sub {
     font-size: 2rem; }
 
@@ -305,6 +308,12 @@ a {
     @media (max-width: 37.5em) {
       .skill-box-title {
         font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .skill-box-text {
+      font-size: 1.5rem; } }
+  @media (max-width: 56.25em) {
+    .skill-box-text {
+      font-size: 1.5rem; } }
 
 .section-projects {
   padding: 10rem 0; }
@@ -375,6 +384,12 @@ a {
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
     background-image: linear-gradient(to right bottom, #283e51, #4b79a1), url("../images/cyberpunkcity2.jpg"); }
+    @media (max-width: 37.5em) {
+      .card__picture {
+        height: 20rem; } }
+    @media (max-width: 56.25em) {
+      .card__picture {
+        height: 20rem; } }
     .card__picture__fastpbx-link {
       background-image: linear-gradient(to right bottom, #283e51, #4b79a1), url("../images/pbxlink.jpeg"); }
     .card__picture__voipscore {
@@ -404,6 +419,12 @@ a {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 0.1rem solid #eeeeee; }
+        @media (max-width: 37.5em) {
+          .card__details ul li {
+            font-size: 2rem; } }
+        @media (max-width: 56.25em) {
+          .card__details ul li {
+            font-size: 2rem; } }
   .card__cta {
     position: absolute;
     top: 50%;

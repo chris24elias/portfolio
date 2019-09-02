@@ -46,6 +46,23 @@
   }
 }
 
+.header-logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4.5rem;
+}
+
+.header-logo {
+  height: 5rem;
+  transition: all 0.3s;
+
+  &:hover {
+    // backface-visibility: hidden;
+    // -webkit-font-smoothing: antialiased;
+    height: 6rem;
+  }
+}
+
 .heading-primary {
   color: #fff;
   letter-spacing: 0.4rem;

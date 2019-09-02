@@ -445,7 +445,13 @@ a {
   background-color: #1b242f;
   height: 7rem;
   position: relative;
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 37.5em) {
+    .footer {
+      flex-direction: column;
+      height: 10rem;
+      padding: 2rem; } }
   .footer .menu-container {
     display: flex;
     flex: 1;

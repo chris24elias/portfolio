@@ -106,5 +106,12 @@
 
   &-text {
     // flex-grow: 1;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
   }
 }

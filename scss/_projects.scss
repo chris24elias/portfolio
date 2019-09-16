@@ -106,23 +106,23 @@
       height: 20rem;
     }
 
-    &__fastpbx-link {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-primary
-        ),
-        url("../images/pbxlink.jpeg");
-    }
+    // &__fastpbx-link {
+    //   background-image: linear-gradient(
+    //       to right bottom,
+    //       $color-primary-light,
+    //       $color-primary
+    //     ),
+    //     url("../images/pbxlink.jpeg");
+    // }
 
-    &__voipscore {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-primary
-        ),
-        url("../images/voipscore.jpg");
-    }
+    // &__voipscore {
+    //   background-image: linear-gradient(
+    //       to right bottom,
+    //       $color-primary-light,
+    //       $color-primary
+    //     ),
+    //     url("../images/voipscore.jpg");
+    // }
   }
 
   &__heading {

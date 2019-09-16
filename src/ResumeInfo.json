@@ -34,13 +34,13 @@
       "title": "FastPBX Link",
       "technologies": ["React Native", "Typescript", "Redux | GraphQL"],
       "repoLink": "https://github.com/chris24elias/fastpbx-link-demo",
-      "image": "fastpbx-link"
+      "image": "images/pbxlink.jpeg"
     },
     {
       "title": "VoIPScore",
       "technologies": ["React Native", "Typescript", "Redux | GraphQL"],
       "repoLink": "https://github.com/chris24elias/voipscore_demo",
-      "image": "voipscore"
+      "image": "images/voipscore.jpg"
     }
   ]
 }

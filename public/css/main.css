@@ -401,10 +401,6 @@ a {
     @media (max-width: 56.25em) {
       .card__picture {
         height: 20rem; } }
-    .card__picture__fastpbx-link {
-      background-image: linear-gradient(to right bottom, #283e51, #4b79a1), url("../images/pbxlink.jpeg"); }
-    .card__picture__voipscore {
-      background-image: linear-gradient(to right bottom, #283e51, #4b79a1), url("../images/voipscore.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 100;

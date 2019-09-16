@@ -14,7 +14,14 @@ const ProjectCard = ({ title, technologies, repoLink, image }) => {
   return (
     <div class="card">
       <div class="card__side card__side--front">
-        <div class={"card__picture card__picture__" + image}>&nbsp;</div>
+        <div
+          class={"card__picture"}
+          style={{
+            backgroundImage: image ? `url(${image})` : null
+          }}
+        >
+          &nbsp;
+        </div>
         <h3 class="card__heading">
           <span class="card__heading-span">{title}</span>
         </h3>

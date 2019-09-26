@@ -29,18 +29,6 @@
       "technologies": ["React", "Javascript", "CSS3 | SASS"],
       "repoLink": "https://github.com/chris24elias/portfolio",
       "image": ""
-    },
-    {
-      "title": "FastPBX Link",
-      "technologies": ["React Native", "Typescript", "Redux | GraphQL"],
-      "repoLink": "https://github.com/chris24elias/fastpbx-link-demo",
-      "image": "images/pbxlink.jpeg"
-    },
-    {
-      "title": "VoIPScore",
-      "technologies": ["React Native", "Typescript", "Redux | GraphQL"],
-      "repoLink": "https://github.com/chris24elias/voipscore_demo",
-      "image": "images/voipscore.jpg"
     }
   ]
 }
